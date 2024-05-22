@@ -52,7 +52,10 @@ document.addEventListener('DOMContentLoaded', function() {
             songDiv.addEventListener('click', () => showSongDetails(album.title, song));
             songList.appendChild(songDiv);
         });
-        albumList.classList.add('hidden');
+        albumList1.classList.add('hidden');
+        albumList2.classList.add('hidden');
+        albumList3.classList.add('hidden');
+        
         songDetails.classList.add('hidden');
         songList.classList.remove('hidden');
         backButton.classList.remove('hidden');
@@ -90,7 +93,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Back button functionality
     backButton.addEventListener('click', () => {
-        albumList.classList.remove('hidden');
+        albumList1.classList.remove('hidden');
+        albumList2.classList.remove('hidden');
+        albumList3.classList.remove('hidden');
         songList.classList.add('hidden');
         songDetails.classList.add('hidden');
         backButton.classList.add('hidden');
