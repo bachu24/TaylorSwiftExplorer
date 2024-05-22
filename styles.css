@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f6f0e8; /* Creamy background */
+    color: #4e433f; /* Dark brown text */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #7d6159; /* Deep brown header */
+    color: #f6f0e8; /* Creamy text */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    gap: 20px;
+}
+
+.content {
+    background: #ede6df;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(100% - 40px); /* Adjusted width to account for padding and gap */
+    max-width: 300px; /* Added max-width to prevent excessive stretching */
+}
+
+.content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+    display: none;
+}
+.album, .song {
+    background-color: #d2b48c;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    width: calc(100% - 30px); /* Adjusted width to account for padding */
+    max-width: 250px; /* Added max-width to prevent excessive stretching */
+}
+
+
+
+.album:hover, .song:hover {
+    background-color: #bda292; /* Slightly darker tan on hover */
+    transform: translateY(-2px);
+}
+
+.album img {
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.song:hover {
+    background-color: #bda292; /* Slightly darker tan on hover */
+    transform: translateY(-2px);
+}
+
+button {
+    background-color: #7d6159; /* Deep brown button background */
+    color: #f6f0e8; /* Creamy button text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #967b6a; /* Darker brown on hover */
+}
+
+pre {
+    background: #ede6df; /* Light beige background for pre elements */
+    padding: 10px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
